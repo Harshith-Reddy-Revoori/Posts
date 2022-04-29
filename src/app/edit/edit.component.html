@@ -1,0 +1,30 @@
+<div class="publish-post">
+  <form class="post-add-form" (ngSubmit)="handleSubmit($event)" [formGroup]="postForm">
+    <fieldset class="fieldset">
+      <legend class="legend">Publish new post here</legend>
+      <div class="input-group">
+        <label for="title" class="input-label">Post title</label>
+        <input type="text"
+               class="input-control"
+               name="title"
+               placeholder="Post title here"
+               id="title"
+               formControlName="title" />
+        <small *ngIf="postForm.get('title').invalid && postForm.get('title').dirty" class="input-error">Title is required</small>
+      </div>
+      <div class="input-group">
+        <label for="content" class="input-label">Post content</label>
+        <textarea class="input-control"
+                  name="content"
+                  placeholder="Post content here"
+                  id="content"
+                  rows="3"
+                  formControlName="content"></textarea>
+        <small *ngIf="postForm.get('content').invalid && postForm.get('content').dirty" class="input-error">Content is required</small>
+      </div>
+      <div class="input-group align-center">
+        <button type="submit" class="btn btn-danger" [disabled]="postForm.invalid">Publish</button>
+      </div>
+    </fieldset>
+  </form>
+</div>
