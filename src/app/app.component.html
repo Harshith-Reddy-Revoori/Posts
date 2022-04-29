@@ -1,0 +1,11 @@
+<div class="home">
+  <menu type="toolbar" class="menubar-container">
+    <li><a routerLink="home">Home</a></li>
+    <li><a routerLink="posts">Posts</a></li>
+    <li><a routerLink="like">Liked</a></li>
+    <li><a routerLink="publish">Publish</a></li>
+    <li><a class="btn btn-primary" routerLink="auth">Login/Signup</a></li>
+    <li><button class="btn btn-primary" (click)="logout()">Logout</button></li>
+  </menu>
+</div>
+<router-outlet></router-outlet>

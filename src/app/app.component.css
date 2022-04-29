@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Poppins&display=swap');
+
+.menubar-container {
+  margin:0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 2rem;
+  background-color: midnightblue;
+  padding: 0.75rem 1rem;
+  height:2em;
+}
+.menubar-container > li{
+    list-style-type:none;
+}
+  .menubar-container > li > a {
+    text-decoration: none;
+    color: lightcyan;
+    display: inline-flex;
+    padding: 1em 1.5em;
+    font-family: poppins;
+    font-size: 1em;
+  }
+.menubar-container > li > a:hover{
+    background-color:lightblue;
+    color:black;
+}
+button{
+    font-size:1em;
+    padding:0.2em 1em;
+    font-family:poppins;
+    background-color:maroon;
+    color:white;
+    border:0;
+    cursor:pointer;
+}
+button:hover{
+    background-color:indianred;
+    color:white;
+}
