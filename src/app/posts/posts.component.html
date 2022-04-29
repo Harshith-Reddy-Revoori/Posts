@@ -1,0 +1,15 @@
+<div class="posts-container">
+  <h1 class="title" [title]="'Posts'">Posts</h1>
+  <p *ngIf="posts && posts.length === 0; else lessPosts">No record found</p>
+  <ng-template #lessPosts>
+    <app-post *ngFor="let post of posts; odd as isOdd; even as isEven"
+              class="post"
+              [ngClass]="{ 'post--odd': isOdd, 'post--even': isEven }"
+              [post]="post"
+              (postDelete)="handlePostDelete($event)"
+              (postLike)="handlePostLikes($event)">
+    </app-post>
+  </ng-template>
+</div>
+
+
