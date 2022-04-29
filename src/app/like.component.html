@@ -1,0 +1,13 @@
+<div class="like">
+  <button class="btn btn-primary" (click)="getLikeItems()">Liked Posts</button>
+
+  <div class="like-items">
+    <div class="like-item"
+         *ngFor="let item of likeItems"
+         (postDislike)="handlePostDislikes($event)">
+      <h3>{{item.title}}<br /></h3>
+      <small>{{item.content}}</small><br>
+      <!--<button class="btn btn-danger" style="margin-left:43%" (click)="handleDislike()">Dislike</button>-->
+    </div>
+  </div>
+</div>
