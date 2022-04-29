@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Montserrat&display=swap');
+.column {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+  padding-bottom: 1em;
+  margin: 1rem;
+  margin-top:0;
+}
+.post {
+  border-radius:2%;
+  margin-left:1em;
+  margin-right:1em;
+  margin-bottom:1em;
+  background-color: lightblue;
+  border-bottom:darkblue solid 2em;
+  height:auto;
+}
+.post__hits {
+  margin-left: 15%;
+}
+#likebtn:hover, #deletebtn:hover, #viewbtn:hover, #editbtn:hover {
+    background-color:blue;
+}
+#likebtn {
+  margin-left: 4%;
+  padding: 1em;
+  background-color: darkblue;
+  color: white;
+  border-radius: 10%;
+  border-color: darkblue;
+  border: 0;
+  margin-bottom: 2%;
+  cursor: pointer;
+  font-family: montserrat;
+  font-weight: bold;
+}
+#deletebtn {
+  margin-left: 4%;
+  padding: 1em;
+  background-color: darkblue;
+  color: white;
+  border-radius: 10%;
+  border-color: darkblue;
+  border: 0;
+  margin-bottom: 2%;
+  cursor: pointer;
+  font-family: montserrat;
+  font-weight: bold;
+}
+#viewbtn {
+  margin-left: 35%;
+  padding: 1em;
+  background-color: darkblue;
+  color: white;
+  border-radius: 10%;
+  border-color: darkblue;
+  border: 0;
+  margin-bottom: 2%;
+  cursor: pointer;
+  font-family: montserrat;
+  font-weight: bold;
+}
+#editbtn {
+  margin-left: 4%;
+  padding: 1em;
+  background-color: darkblue;
+  color: white;
+  border-radius: 10%;
+  border-color: darkblue;
+  border: 0;
+  margin-bottom: 2%;
+  cursor: pointer;
+  font-family: montserrat;
+  font-weight: bold;
+}
+

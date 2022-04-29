@@ -1,0 +1,18 @@
+<div class="post">
+  <div class="column">
+    <h1 class="grid-content" [ngStyle]="post.id === 1 && {'color': 'purple'} || post.id === 100 && {'color': 'purple'}" [attr.aria-label]="post.title" [title]="post.title">
+      {{ post.title | titlecase }}
+    </h1>
+    <div class="grid-content">
+      <p class="post__content">{{post.content}}</p>
+      <span class="post__likes"><span style="font-weight:bold">Likes:</span> {{post.likes}}</span>
+      <span class="post__hits"><span style="font-weight:bold">Hits:</span> {{post.hits}}</span>
+    </div>
+  </div>
+  <div class="buttons">
+    <button class="btn btn-primary" id="viewbtn" (click)="showDetails()">View</button>
+    <button id="editbtn" class="btn btn-danger" [routerLink]="['edit', post.id]">Edit</button>
+    <button class="btn btn-danger" id="likebtn" (click)="handleLikes()">Like</button>
+    <button class="btn btn-danger" id="deletebtn" (click)="handleDelete()">Delete</button>
+  </div>
+</div>
